@@ -1,4 +1,5 @@
-import './app.css'
+import './css/fonts.css';
+import './css/app.css'
 import App from './App.svelte'
 
 const app = new App({
