@@ -1,0 +1,15 @@
+:root {
+  /* Main colors */
+  --black: #2e2e2e;
+  --black-alt: #313131;
+  --white: #fefefe;
+  --white-alt: #ececec;
+  --pink: #f06da4;
+  --pink-alt: #f17fae;
+
+  /* UI Colors -- General */
+  --background: var(--black);
+  --foreground: var(--white);
+  --primary: var(--pink);
+  --secondary: var(--pink-alt);
+}

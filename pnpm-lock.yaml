@@ -7,6 +7,8 @@ specifiers:
   '@typescript-eslint/parser': ^5.51.0
   eslint: ^8.33.0
   eslint-plugin-svelte3: ^4.0.0
+  normalize.css: ^8.0.1
+  sass: ^1.58.0
   svelte: ^3.55.1
   svelte-check: ^2.10.3
   tslib: ^2.5.0
@@ -20,11 +22,13 @@ devDependencies:
   '@typescript-eslint/parser': 5.51.0_4vsywjlpuriuw3tl5oq6zy5a64
   eslint: 8.33.0
   eslint-plugin-svelte3: 4.0.0_4omm2ewoudhgnmf7aocafatnc4
+  normalize.css: 8.0.1
+  sass: 1.58.0
   svelte: 3.55.1
-  svelte-check: 2.10.3_svelte@3.55.1
+  svelte-check: 2.10.3_sass@1.58.0+svelte@3.55.1
   tslib: 2.5.0
   typescript: 4.9.5
-  vite: 4.1.1
+  vite: 4.1.1_sass@1.58.0
 
 packages:
 
@@ -313,7 +317,7 @@ packages:
       magic-string: 0.27.0
       svelte: 3.55.1
       svelte-hmr: 0.15.1_svelte@3.55.1
-      vite: 4.1.1
+      vite: 4.1.1_sass@1.58.0
       vitefu: 0.2.4_vite@4.1.1
     transitivePeerDependencies:
       - supports-color
@@ -965,6 +969,10 @@ packages:
     engines: {node: '>= 4'}
     dev: true
 
+  /immutable/4.2.4:
+    resolution: {integrity: sha512-WDxL3Hheb1JkRN3sQkyujNlL/xRjAo3rJtaU5xeufUauG66JdMr32bLj4gF+vWl84DIA3Zxw7tiAjneYzRRw+w==}
+    dev: true
+
   /import-fresh/3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
@@ -1154,6 +1162,10 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /normalize.css/8.0.1:
+    resolution: {integrity: sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==}
+    dev: true
+
   /once/1.4.0:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
     dependencies:
@@ -1324,6 +1336,16 @@ packages:
       rimraf: 2.7.1
     dev: true
 
+  /sass/1.58.0:
+    resolution: {integrity: sha512-PiMJcP33DdKtZ/1jSjjqVIKihoDc6yWmYr9K/4r3fVVIEDAluD0q7XZiRKrNJcPK3qkLRF/79DND1H5q1LBjgg==}
+    engines: {node: '>=12.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.5.3
+      immutable: 4.2.4
+      source-map-js: 1.0.2
+    dev: true
+
   /semver/7.3.8:
     resolution: {integrity: sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==}
     engines: {node: '>=10'}
@@ -1400,7 +1422,7 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /svelte-check/2.10.3_svelte@3.55.1:
+  /svelte-check/2.10.3_sass@1.58.0+svelte@3.55.1:
     resolution: {integrity: sha512-Nt1aWHTOKFReBpmJ1vPug0aGysqPwJh2seM1OvICfM2oeyaA62mOiy5EvkXhltGfhCcIQcq2LoE0l1CwcWPjlw==}
     hasBin: true
     peerDependencies:
@@ -1413,7 +1435,7 @@ packages:
       picocolors: 1.0.0
       sade: 1.8.1
       svelte: 3.55.1
-      svelte-preprocess: 4.10.7_4x7phaipmicbaooxtnresslofa
+      svelte-preprocess: 4.10.7_cjyprvzu4kavkaguwtgkgx5cp4
       typescript: 4.9.5
     transitivePeerDependencies:
       - '@babel/core'
@@ -1437,7 +1459,7 @@ packages:
       svelte: 3.55.1
     dev: true
 
-  /svelte-preprocess/4.10.7_4x7phaipmicbaooxtnresslofa:
+  /svelte-preprocess/4.10.7_cjyprvzu4kavkaguwtgkgx5cp4:
     resolution: {integrity: sha512-sNPBnqYD6FnmdBrUmBCaqS00RyCsCpj2BG58A1JBswNF7b0OKviwxqVrOL/CKyJrLSClrSeqQv5BXNg2RUbPOw==}
     engines: {node: '>= 9.11.2'}
     requiresBuild: true
@@ -1482,6 +1504,7 @@ packages:
       '@types/sass': 1.43.1
       detect-indent: 6.1.0
       magic-string: 0.25.9
+      sass: 1.58.0
       sorcery: 0.10.0
       strip-indent: 3.0.0
       svelte: 3.55.1
@@ -1546,7 +1569,7 @@ packages:
       punycode: 2.3.0
     dev: true
 
-  /vite/4.1.1:
+  /vite/4.1.1_sass@1.58.0:
     resolution: {integrity: sha512-LM9WWea8vsxhr782r9ntg+bhSFS06FJgCvvB0+8hf8UWtvaiDagKYWXndjfX6kGl74keHJUcpzrQliDXZlF5yg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -1575,6 +1598,7 @@ packages:
       postcss: 8.4.21
       resolve: 1.22.1
       rollup: 3.14.0
+      sass: 1.58.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -1587,7 +1611,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.1.1
+      vite: 4.1.1_sass@1.58.0
     dev: true
 
   /which/2.0.2:

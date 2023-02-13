@@ -1,5 +1,4 @@
 import EmitterManager from './EmitterManager';
-import type { EmitterInstance } from './EmitterManager';
 import * as ConvertTime from './TimeConverter';
 
 // Groups of emitters
